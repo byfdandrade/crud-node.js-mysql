@@ -1,0 +1,23 @@
+<div>
+    <h1>Editar Pagamento</h1>
+</div>
+<div class="text-right">
+    <a class="btn btn-sm btn-warning" href="/list-pagamentos/">Voltar</a>
+    <a class="btn btn-sm btn-danger" href="/del-pagamento/{{id}}">Apagar</a>
+</div>
+
+<div>
+    <form action="/update-pagamento/{{id}}" method="post">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text" class="form-control" name="nome" value="{{nome}}"><br><br>
+
+        <label for="valor" class="form-label">Valor</label>
+        <input type="text" class="form-control" name="valor" value="{{valor}}"><br><br>
+
+        <div class="text-right">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+
+
+    </form>
+</div>

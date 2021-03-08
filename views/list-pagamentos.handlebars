@@ -1,0 +1,33 @@
+<div>
+    <h1>Lista de Pagamentos</h1>
+</div>
+<div class="p-2 text-right">
+    <a href="/cad-pagamento"><button class="btn bg-secondary" style="color:white">Cadastrar</button></a>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Data</th>
+            <th scope="col" class="text-right">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each pagamentos}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{nome}}</td>
+            <td>{{valor}}</td>
+            <td>{{#formatDate createdAt}}{{/formatDate}}</td>
+            <td class="text-right">
+                <a href="/del-pagamento/{{id}}" class="btn btn-sm btn-danger">Apagar</a>
+                <a href="/edit-pagamento/{{id}}" class="btn btn-sm btn-primary">Editar</a>
+                <a href="/view-pagamento/{{id}}" class="btn btn-sm btn-warning">Visualizar</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
