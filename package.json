@@ -10,14 +10,14 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.5.0"
   },
-  "name": "curso-node",
+  "name": "crud-nodejs-mysql",
   "version": "1.0.0",
-  "description": "Curso Node.js - FDAndrade Tecnologia",
+  "description": "Crud Node.js - FDAndrade Tecnologia",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "FDAndrade Tecnologia",
+  "author": "FDAndrade - dev@fdandrade.com.br",
   "license": "ISC",
   "devDependencies": {
     "save": "^2.4.0"
