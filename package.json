@@ -12,7 +12,7 @@
   },
   "name": "crud-nodejs-mysql",
   "version": "1.0.0",
-  "description": "Crud Node.js - FDAndrade Tecnologia",
+  "description": "CRUD Node.js + Mysql",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
